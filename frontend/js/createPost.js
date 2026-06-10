@@ -24,7 +24,7 @@ if (editId) {
 async function loadPost() {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/posts/${editId}`
+      `https://blog-platform-with-comments-c1dm.onrender.com/api/posts/${editId}`
     );
 
     const data = await response.json();
@@ -57,7 +57,7 @@ postForm.addEventListener(
       if (editId) {
 
         response = await fetch(
-          `http://localhost:5000/api/posts/${editId}`,
+          `https://blog-platform-with-comments-c1dm.onrender.com/api/posts/${editId}`,
           {
             method: "PUT",
             headers: {
@@ -74,7 +74,7 @@ postForm.addEventListener(
       } else {
 
         response = await fetch(
-          "http://localhost:5000/api/posts/create",
+          "https://blog-platform-with-comments-c1dm.onrender.com/api/posts/create",
           {
             method: "POST",
             headers: {

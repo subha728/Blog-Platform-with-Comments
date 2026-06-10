@@ -29,7 +29,7 @@ logoutBtn.addEventListener("click", () => {
 async function fetchPosts() {
   try {
     const response = await fetch(
-      "http://localhost:5000/api/posts"
+      "https://blog-platform-with-comments-c1dm.onrender.com/api/posts"
     );
 
     const data = await response.json();
@@ -136,7 +136,7 @@ async function deletePost(id) {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/posts/${id}`,
+      `https://blog-platform-with-comments-c1dm.onrender.com/api/posts/${id}`,
       {
         method: "DELETE",
       }

@@ -19,7 +19,7 @@ const postId = params.get("id");
 async function loadPost() {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/posts/${postId}`
+      `https://blog-platform-with-comments-c1dm.onrender.com/api/posts/${postId}`
     );
 
     const data = await response.json();
@@ -51,7 +51,7 @@ async function loadPost() {
 async function loadComments() {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/comments/${postId}`
+      `https://blog-platform-with-comments-c1dm.onrender.com/api/comments/${postId}`
     );
 
     const data = await response.json();
@@ -99,7 +99,7 @@ commentForm.addEventListener(
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/comments/create",
+        "https://blog-platform-with-comments-c1dm.onrender.com/api/comments/create",
         {
           method: "POST",
           headers: {

@@ -9,7 +9,7 @@ registerForm.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/auth/register",
+      "https://blog-platform-with-comments-c1dm.onrender.com/api/auth/register",
       {
         method: "POST",
         headers: {

@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/auth/login",
+      "https://blog-platform-with-comments-c1dm.onrender.com/api/auth/login",
       {
         method: "POST",
         headers: {
